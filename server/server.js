@@ -13,21 +13,21 @@ const PORT = 4000;
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use(
-  cors({
-    origin: ["https://password-manager-alpha-bay.vercel.app"],
-    methods: ["POST", "GET", "PATCH", "DELETE"],
-    credentials: true,
-  })
-);
+
+app.use("/api/details", detailRoutes);
+app.use("/api/user", userRoutes);
+
+const corsOptions = {
+  origin: process.env.FRONTEND_URL,
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+  credentials: true,
+};
+app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
 });
-
-app.use("/api/details", detailRoutes);
-app.use("/api/user", userRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)
