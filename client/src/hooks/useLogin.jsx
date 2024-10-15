@@ -10,7 +10,7 @@ export const useLogin = () => {
         setIsLoading(true)
         setError(true)
 
-        const response = await fetch('http://localhost:4000/api/user/login', {
+        const response = await fetch('https://vault-7nbr.onrender.com/api/user/login', {
             method: "POST",
             headers : {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})

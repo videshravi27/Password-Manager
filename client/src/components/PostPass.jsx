@@ -32,7 +32,7 @@ const PostPass = () => {
 
         const detail = { website, url, username, password };
 
-        const response = await fetch('http://localhost:4000/api/details', {
+        const response = await fetch('https://vault-7nbr.onrender.com/api/details', {
             method: 'POST',
             body: JSON.stringify(detail),
             headers: {

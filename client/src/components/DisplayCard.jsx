@@ -5,7 +5,7 @@ const WebsiteCard = ({ detail }) => {
     const navigate = useNavigate();
 
     const handleNavigate = () => {
-        navigate(`  /stored-services/${detail._id}`);
+        navigate(`/stored-services/${detail._id}`);
     };
 
     return (

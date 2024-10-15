@@ -14,7 +14,7 @@ const StoredPass = ({ detail }) => {
             return;
         }
 
-        const response = await fetch('http://localhost:4000/api/details/' + detail._id, {
+        const response = await fetch('https://vault-7nbr.onrender.com/api/details/' + detail._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}` 

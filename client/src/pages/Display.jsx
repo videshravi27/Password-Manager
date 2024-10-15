@@ -9,7 +9,7 @@ const Display = () => {
 
     useEffect(() => {
         const fetchDetails = async () => {
-            const response = await fetch('http://localhost:4000/api/details', {
+            const response = await fetch('https://vault-7nbr.onrender.com/api/details', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
