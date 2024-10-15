@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 const detailRoutes = require("./routes/details");
 const userRoutes = require("./routes/user");
 
-const PORT = 3000;
+const PORT = 4000;
 
 const app = express();
 app.use(express.json());
