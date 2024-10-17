@@ -20,7 +20,7 @@ const UpdatePass = () => {
         const fetchDetails = async () => {
             if (user && user.token) {
                 try {
-                    const response = await fetch(`https://vault-7nbr.onrender.com/api/details/${id}`, {
+                    const response = await fetch(`https://vault-7nbr.onrender.com/details/${id}`, {
                         headers: {
                             'Authorization': `Bearer ${user.token}`
                         }
@@ -58,7 +58,7 @@ const UpdatePass = () => {
         }
 
         const updatedDetail = { website, url, username, password };
-        const response = await fetch(`https://vault-7nbr.onrender.com/api/details/${id}`, {
+        const response = await fetch(`https://vault-7nbr.onrender.com/details/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

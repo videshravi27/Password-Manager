@@ -14,8 +14,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/api/details", detailRoutes);
-app.use("/api/user", userRoutes);
+app.use("/details", detailRoutes);
+app.use("/user", userRoutes);
 
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
