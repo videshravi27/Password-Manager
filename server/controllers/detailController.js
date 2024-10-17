@@ -77,7 +77,7 @@ const createDetail = async (req, res) => {
       password: encryptedPassword,
       user_id,
     });
-    res.status(200).json(detail);
+    res.status(200).json({ message: "Password Stored!", detail });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -94,7 +94,7 @@ const deleteDetail = async (req, res) => {
   if (!detail) {
     return res.status(400).json({ error: "No such data" });
   }
-  res.status(200).json(detail);
+  res.status(200).json({ message: "Password Deleted!" , detail} );
 };
 
 //update a data
@@ -119,7 +119,7 @@ const updateDetail = async (req, res) => {
       return res.status(400).json({ error: "No such data" });
     }
 
-    res.status(200).json(detail);
+    res.status(200).json({ message: "Password Updated!", detail });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

@@ -124,7 +124,7 @@ const Signup = () => {
                             >
                                 Sign up
                             </button>
-                            {error && <div className="text-red-600 text-sm mt-5">{error}</div>}
+                            {/* {error && <div className="text-red-600 text-sm mt-5">{error}</div>} */}
                         </div>
                     </form>
                     <div className="mt-4">
