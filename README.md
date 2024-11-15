@@ -26,12 +26,12 @@ Create a .env file in the backend directory and add the following:
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
--`cd server`
--`npm install`
--`npm start`
+`cd server`
+`npm install`
+`npm start`
 
 - **Frontend:**
 
--`cd client`
--`npm install`
--`npm run dev`
+`cd client`
+`npm install`
+`npm run dev`
