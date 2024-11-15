@@ -18,20 +18,39 @@ A secure and user-friendly password management application built with the MERN s
 - **Authentication:** JWT (JSON Web Tokens)
 - **Encryption:** bcrypt for password hashing
 
-- ## Install dependencies:
+## Getting Started
+
+Follow these steps to get the project up and running locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/videshravi27/Password-Manager.git
+```
 
 - **Backend:**
 
 Create a .env file in the backend directory and add the following:
+
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
-`cd server`
-`npm install`
-`npm start`
+### 2. Install dependency
 
-- **Frontend:**
+```bash
+cd server
+npm install
 
-`cd client`
-`npm install`
-`npm run dev`
+cd client
+npm install
+```
+
+### 3. Run the app
+
+```bash
+cd server
+npm start
+
+cd client
+npm run dev
+```
