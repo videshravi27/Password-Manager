@@ -1,4 +1,4 @@
-# Password Manager
+# Vault
 
 A secure and user-friendly password management application built with the MERN stack (MongoDB, Express.js, React, Node.js). This application allows users to safely store, manage, and retrieve their passwords with encryption, ensuring data privacy and security.
 
@@ -22,16 +22,16 @@ A secure and user-friendly password management application built with the MERN s
 
 - **Backend:**
 
-- Create a .env file in the backend directory and add the following:
-- MONGO_URI=your_mongodb_connection_string
-- JWT_SECRET=your_jwt_secret
+Create a .env file in the backend directory and add the following:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 
-- cd server
-- npm install
-- npm start
+-`cd server`
+-`npm install`
+-`npm start`
 
 - **Frontend:**
 
-- cd client
-- npm install
-- npm run dev
+-`cd client`
+-`npm install`
+-`npm run dev`
