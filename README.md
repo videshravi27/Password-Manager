@@ -30,8 +30,8 @@ git clone https://github.com/videshravi27/Password-Manager.git
 
 - **Create a .env file in the backend directory and add the following:**
 
-- MONGO_URI=your_mongodb_connection_string
-- JWT_SECRET=your_jwt_secret
+### 1.1. MONGO_URI=your_mongodb_connection_string
+### 1.2. JWT_SECRET=your_jwt_secret
 
 ### 2. Install dependency
 
