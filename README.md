@@ -12,8 +12,8 @@ A secure and user-friendly password management application built with the MERN s
 
 ## Tech Stack
 
-- **Frontend:** React, HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
+- **Frontend:** React, Tailwind CSS, JavaScript
+- **Backend:** Node.js 
 - **Database:** MongoDB
 - **Authentication:** JWT (JSON Web Tokens)
 - **Encryption:** bcrypt for password hashing
@@ -32,8 +32,8 @@ git clone https://github.com/videshravi27/Password-Manager.git
 
 Create a .env file in the backend directory and add the following:
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+-MONGO_URI=your_mongodb_connection_string
+-JWT_SECRET=your_jwt_secret
 
 ### 2. Install dependency
 
