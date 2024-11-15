@@ -29,7 +29,7 @@ git clone https://github.com/videshravi27/Password-Manager.git
 ```
 
 - **Backend:**
-Create a .env file in the backend directory and add the following:
+- Create a .env file in the backend directory and add the following:
 
 - MONGO_URI=your_mongodb_connection_string
 - JWT_SECRET=your_jwt_secret
